@@ -1,0 +1,104 @@
+.flex-header{
+    @include flex (none);
+    height:80px;
+    justify-content: space-between;
+}
+.header-nav{
+    @include flex (none);
+    width: 570px;
+}
+.head-border{
+    border: 1px solid #ECECEC
+}
+.sitenav{
+    margin: 0px;
+    padding: 0px;
+
+}
+.sitenav .item + .item{
+    margin-left: 50px;
+}
+
+.link{
+    color: $title-text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    transition: $timing-function;    
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+    }
+    .sitenav .item{
+        position: relative;
+    }
+    .link::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color:$accent-color;
+        height: 5px;
+        border-radius: 4px;
+        bottom: -30.5px;
+        opacity: 0;
+        transition:$timing-function;
+    }
+    .link.current{
+        color: $accent-color;
+    }
+    .sitenav .item  .link.current::before{
+        opacity: 1;
+    }
+    .contact{
+        display: flex;
+        width: 370px;
+        margin-left: auto;
+        justify-content: flex-end;
+        padding-left: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+         
+         .links{
+             @include flex (none);
+             color: $primary-text-color;
+             font-weight: 500;
+             font-size: 14px;
+             line-height: 1.14;
+             letter-spacing: 0.02em;  
+             text-decoration: none; 
+             transition: $timing-function;
+
+              &:hover,
+              &:focus{
+                  color: $accent-color;
+              }
+            }
+        }
+    .contact .item + .item{
+        margin-left: 30px;
+         }
+
+    .icon-mail{
+       width: 16px;
+       height: 12px;
+       fill: currentColor;
+       margin-right: 5px;
+    }
+    .icon-kontakt{
+        width: 10px;
+        height: 15px;
+        fill: currentColor;
+        margin-right: 5px;
+    }
+    
+    
+
+         
+    

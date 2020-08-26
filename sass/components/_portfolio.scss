@@ -1,0 +1,121 @@
+.button-container{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.instruments{
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+.instrumens-link{
+    color: $title-text-color;
+    background-color: #F5F4FA;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: inherit;
+
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+
+    transition: $timing-function;
+
+    &:hover,
+    &:focus{
+        color:$primary-white-color;
+        background-color: $accent-color;
+    }
+}
+.instruments .item:not(:last-child){
+    margin-right: 8px;
+}
+.portfolio-box{
+    padding-bottom: 94px;
+}
+.border-card{
+    border: 1px solid #EEEEEE;
+}
+.presentation{
+    position: relative;
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+
+    &:hover{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &:nth-child(3n){
+        margin-right: 0px;
+    }
+    &:nth-child(n+7){
+        margin-bottom: 0px;
+    }
+}
+.pictures{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.main-port{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  .text-black{
+    color: $title-text-color;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+  }
+}
+
+.text-port{
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}  
+.main-port .port-links{
+    text-decoration: none;
+}
+.portfolio-text{
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    width: 370px;
+    height: 294px;
+    padding: 64px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 28px;
+    background: rgba(33, 150, 243, 0.9);
+    color: $primary-white-color;
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
+}
+.overlay{
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+.port-links:hover .portfolio-text,
+.port-links:focus .portfolio-text{
+  transform: translateY(0px);
+  
+}

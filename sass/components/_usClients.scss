@@ -1,0 +1,56 @@
+.clients-list{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+.clients-list .item{
+    @include flex(center);
+    width: 170px;
+    height: 90px;
+    border: 1px solid $primary-text-color;
+    border-radius: 8px;
+    color: $primary-text-color;
+    transition: $timing-function;
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        border:1px solid $accent-color;
+    }
+
+}
+.margin:not(:last-child){
+    margin-right: 30px;
+}
+.first-icon{
+    width: 44px;
+    height: 49px;
+    fill: currentColor;
+}
+.second-icon{
+    width: 40px;
+    height: 52px;
+    fill: currentColor;
+}
+.thrie-icon{
+    width: 41px;
+    height: 42.6px;
+    fill: currentColor;
+}
+.four-icon{
+    width: 79.6px;
+    height: 42px;
+    fill: currentColor;
+}
+
+.five-icon{
+    width: 59px;
+    height: 47px;
+    fill: currentColor;
+}
+
+.six-icon{
+    width: 88.5px;
+    height: 45.4px;
+    fill: currentColor;
+}
